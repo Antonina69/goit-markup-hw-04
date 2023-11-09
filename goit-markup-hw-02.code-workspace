@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "goit-markup-hw-02",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../../.vscode/goit-markup-hw-01/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "goit-markup-hw-02"
+	}
+}
