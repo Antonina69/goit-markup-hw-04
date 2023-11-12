@@ -330,6 +330,7 @@ box-shadow: 1px 4px 6px 0px #00000029,
         padding: 0;
         align-items: center;
         justify-content: center;
+        border: none;
 }
 
 
