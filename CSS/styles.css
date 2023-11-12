@@ -129,22 +129,14 @@ color: var(--color-link);
 .li-contacts-link:last-child {
         margin-right: 0;
 }
-.icon-envelope{
+.icon-header{
        display: inline-block;
         justify-content: center;
-        height: 12px;
-        width: 16px;
+        align-items: center;
         margin-right: 10px;
         --icon-color: currentColor;
 }
-.icon-smartphone {
-        display: inline-block;
-        justify-content: center;
-        height: 16px;
-        width: 10px;
-        margin-right: 10px;
-        --icon-color: currentColor;
-}
+
 
 
 .contacts-link {
