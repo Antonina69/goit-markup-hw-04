@@ -4,12 +4,18 @@
     --color-secondary: #757575;
     --color-brand : #2196F3;
     --color-bg-dark: #2F303A;
+    --color-bg-dark-transparent: #2F303A66;
     --color-light: #FFF;
     --color-logo: #000;
     --color-link: #2196F3;
     --color-button: #188CE8;
     --color-bg-light: #F5F4FA;
     --border-color: #EEEEEE;
+    --bg-color-icons: #F5F4FA;
+    --color-background-hero: #C4C4C4;
+--color-social-footer: #FFFFFF1A;
+
+
 }
 
 body {
@@ -115,15 +121,34 @@ color: var(--color-link);
         display: flex;
         margin-left: auto;
         align-items: center;
+        justify-content: center;
 }
 .li-contacts-link {
        margin-right: 50px;
-       align-items: center;
 }
 .li-contacts-link:last-child {
         margin-right: 0;
 }
+.icon-envelope{
+       display: inline-block;
+        justify-content: center;
+        height: 12px;
+        width: 16px;
+        margin-right: 10px;
+        --icon-color: currentColor;
+}
+.icon-smartphone {
+        display: inline-block;
+        justify-content: center;
+        height: 16px;
+        width: 10px;
+        margin-right: 10px;
+        --icon-color: currentColor;
+}
+
+
 .contacts-link {
+        display: flex;
         padding: 32px 0;
         font-size: 14px;
         font-weight: 500;
@@ -131,6 +156,7 @@ color: var(--color-link);
         letter-spacing: 0.02em;
         text-align: left;
         color: var(--color-secondary);
+        justify-content: center;
 }
 
 
@@ -162,6 +188,9 @@ color: var(--color-link);
 .button:focus{
         color: var(--color-light);
         background-color: var(--color-button);
+        box-shadow: 0px 2px 2px 0px #0000001F,
+        0px 1px 2px 0px #00000014,
+        0px 3px 1px 0px #0000001A;
 }
 
 .li-button {
@@ -172,12 +201,17 @@ margin-right: 8px;
 }
 
 .hero {
-        width: 1600px;
+        max-width: 1600px;
         text-align: center;
         padding: 200px 0; 
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--color-bg-dark);
+        background-color: var(--color-background-hero);
+        background-image: linear-gradient(to right, #2F303A66,#2F303A66),
+        url(../images/Img\ \(2\)\ \(1\).jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -236,6 +270,13 @@ margin-right: 8px;
         border: 1px solid #EEEEEE;
         border-top: none;
 }
+.projects-card:hover,
+.projects-card:focus {
+box-shadow: 1px 4px 6px 0px #00000029,
+ 0px 4px 4px 0px #0000000F,
+ 0px 1px 1px 0px #0000001F;
+}
+
 
 .title-projects {
         margin-bottom: 4px;
@@ -270,15 +311,28 @@ margin-right: 8px;
 }
 .ul-benefits {
         display: flex;
+        align-items: center;
+        justify-content: center;
 
 }
 .benefits-items {
         margin-right: 30px;
-        width: 270px;
 }
 .benefits-items:last-child {
         margin-right:0;
 }
+.button-benefits {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: var(--bg-color-icons);
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+}
+
+
 .benefits {
     font-size: 14px;
     font-weight: 700;
@@ -287,6 +341,7 @@ margin-right: 8px;
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 .benefit-text {
         font-size: 14px;
@@ -327,6 +382,7 @@ margin-right: 8px;
 }
 .ul-section-team {
         display: flex;
+        
        
 }
 .li-section-team {
@@ -337,7 +393,47 @@ margin-right: 8px;
 }
 .team-cards {
         padding: 30px;
+        box-shadow: 0px 2px 1px 0px #00000033,
+         0px 1px 1px 0px #00000024,
+         0px 1px 3px 0px #0000001F; 
 }
+
+
+.team-social-link {
+        display: flex;
+       justify-items: center;
+       align-items: center;
+       margin-top: 16px;
+       
+}
+
+.social-item {
+margin-right: 10px;
+
+}
+.social-item:last-child {
+margin-right:0;
+}
+.social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--color-light);
+        color: var(--color-secondary);
+}
+.social-link:hover,
+.social-link:focus {
+        background-color:var(--color-brand) ;
+        color: #FFF;
+}
+.social-icons {
+        --icon-color: currentColor;
+        
+}
+
 .persons {
         margin-bottom: 10px;
         font-size: 16px;
@@ -353,6 +449,54 @@ margin-right: 8px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color: var(--color-secondary);
+}
+.title-clients {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+}
+.ul-clients {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+.li-clients {
+        margin-right: 30px;
+        
+
+}
+.li-clients:last-child {
+margin-right: 0;
+}
+
+.icon-logo {
+fill: #AFB1B8;
+
+}
+.icon-logo:hover,
+.icon-logo:focus {
+        fill: var(--color-brand);
+}
+
+.clients {
+        display: flex;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        background-color: #FFF;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        
+}
+.clients:hover,
+.clients:focus {
+        color: var(--color-brand);
+        border: 1px solid #2196F3;
 }
 /* Footer */
 
@@ -409,5 +553,53 @@ color: var(--color-link);
 .footer-link:hover,
 .footer-link:focus {
 color: var(--color-link);
+}
+.footer .container {
+        display: flex;
+        justify-content: baseline;
+}
+.footer-social-block {
+        margin-left: 70px;
+        width: 206px;
+        height: 80px;
+}
+.footer-social {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: var(--color-light);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+}
+.ul-footer-social {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+.li-footer-social {
+margin-right: 10px;
+}
+.li-footer-social:last-child {
+        margin-right: 0;
+}
+
+.link-footer-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: var(--color-social-footer);
+        border-radius: 50%;
+}
+.link-footer-social:hover,
+.link-footer-social:focus {
+background-color: var(--color-brand);
+}
+.footer-icon {
+        fill: #FFF;
 }
 
