@@ -549,7 +549,7 @@ color: var(--color-link);
 }
 .footer .container {
         display: flex;
-        justify-content: baseline;
+        align-items: baseline;
 }
 .footer-social-block {
         margin-left: 70px;
