@@ -303,8 +303,8 @@ box-shadow: 1px 4px 6px 0px #00000029,
 }
 .ul-benefits {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        
 
 }
 .benefits-items {
